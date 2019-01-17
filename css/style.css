@@ -121,3 +121,79 @@ span {
 /****************** FIN Module 2 *****************/
 
 /******************** Module 3 *******************/
+
+#nav {
+    padding: 0;
+    width: 100%;
+    /* margin: 30px 50px; */
+    text-align: center;
+    background: #000 0 0 repeat-x;
+    float: left;
+    border: 1px solid #fff;
+}
+
+.block-nav {
+    padding: 25px 50px;
+}
+
+#nav li {
+    padding: 0;
+    margin: 0;
+    display: inline;
+    list-style: none;
+    position: relative;
+}
+
+#nav a {
+    display: inline-block;
+    /* margin: 0 30px; */
+}
+
+#nav a:link,
+#nav a:visited {
+    color: #fff;
+    /* background: #000; */
+    padding: 15px;
+    float: left;
+    width: auto;
+    border-right: 1px solid #fff;
+    text-decoration: none;
+    /* font: bold 1em/1em Arial, Helvetica, sans-serif; */
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+#nav li:first-child a {
+    border-left:1px solid #fff;
+}
+
+#nav a:hover {
+    color:#000;
+    background:#fff;
+}
+
+#nav a:active
+{
+    background:#fff;
+    color:#000;
+}
+
+nav ul {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+#triangle {
+    font-size: 0;
+    line-height: 0;
+    width: 10px;
+    border-bottom: 20px solid black;/* couleur du triangle*/
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    z-index: 100;
+    position: absolute;
+    bottom: 0;
+    right: 40%;
+}
