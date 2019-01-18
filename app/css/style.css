@@ -239,3 +239,54 @@ nav {
 
 nav li:hover .triangle {
   z-index: 100; }
+
+#tabs_panel-1,
+#tabs_panel-2,
+#tabs_panel-3,
+#tabs_panel-4 {
+  display: none; }
+  #tabs_panel-1.active,
+  #tabs_panel-2.active,
+  #tabs_panel-3.active,
+  #tabs_panel-4.active {
+    display: block; }
+
+.tabs {
+  padding: 0;
+  width: 100%;
+  text-align: center;
+  background: #42363b 0 0 repeat-x;
+  float: left;
+  margin-left: -1px; }
+  .tabs li {
+    padding: 0;
+    margin: 0;
+    display: inline;
+    list-style: none;
+    position: relative; }
+    .tabs li:first-child a {
+      border-left: 1px solid #fff; }
+    .tabs li a {
+      display: inline-block; }
+      .tabs li a:link, .tabs li a:visited {
+        color: #fff;
+        padding: 10px 15px;
+        float: left;
+        width: auto;
+        border-right: 1px solid #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 12px; }
+      .tabs li a ul {
+        padding-left: 0;
+        display: flex;
+        justify-content: center;
+        margin: 0; }
+
+.tabs li a.active,
+.tabs_panels .tabs_panel.active {
+  background-color: grey;
+  color: white; }
+
+.tabs_panels .tabs_panel {
+  padding: 5px; }
