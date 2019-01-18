@@ -311,7 +311,10 @@ nav li:hover .triangle {
 #tabs_panel-1,
 #tabs_panel-2,
 #tabs_panel-3,
-#tabs_panel-4 {
+#tabs_panel-4,
+#tabs_panel-5,
+#tabs_panel-6,
+#tabs_panel-7 {
   display: none;
 
   &.active {
@@ -371,4 +374,11 @@ nav li:hover .triangle {
 
 .tabs_panels .tabs_panel {
   padding: 5px;
+}
+
+#tabs_panel-5,
+#tabs_panel-6,
+#tabs_panel-7 {
+  background-color: #fff;
+  color: black;
 }
