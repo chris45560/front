@@ -247,7 +247,9 @@ nav li:hover .triangle {
 #tabs_panel-5,
 #tabs_panel-6,
 #tabs_panel-7 {
-  display: none; }
+  position: absolute;
+  top: -9999px;
+  left: -9999px; }
   #tabs_panel-1.active,
   #tabs_panel-2.active,
   #tabs_panel-3.active,
@@ -255,7 +257,7 @@ nav li:hover .triangle {
   #tabs_panel-5.active,
   #tabs_panel-6.active,
   #tabs_panel-7.active {
-    display: block; }
+    position: initial; }
 
 .tabs {
   padding: 0;
@@ -302,3 +304,45 @@ nav li:hover .triangle {
 #tabs_panel-7 {
   background-color: #fff;
   color: black; }
+
+section {
+  background-color: #888888;
+  padding: 0 50px;
+  margin: 10px 0; }
+
+article {
+  background-color: #444444;
+  padding: 5px 10px; }
+
+span {
+  color: white; }
+
+#div_part_2 {
+  width: 100%;
+  padding: 0; }
+  #div_part_2 #article_1 {
+    height: 50px; }
+  #div_part_2 section#section_2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /*
+      @media (max-width: 800px) {
+        flex-direction: column;
+      }
+      */ }
+    #div_part_2 section#section_2 article {
+      background-color: #444444;
+      padding: 5px 10px;
+      height: 300px; }
+      #div_part_2 section#section_2 article#article_2 {
+        flex-basis: 68%; }
+      #div_part_2 section#section_2 article#article_3 {
+        width: 165px;
+        min-width: 165px;
+        margin-left: 16px;
+        /*
+          @media (max-width: 800px) {
+            margin: 20px 0 0 0;
+          }
+          */ }

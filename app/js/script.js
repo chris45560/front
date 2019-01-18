@@ -53,3 +53,36 @@ document.addEventListener('click', function (event) { // On écoute les événem
         }
     }
 }, false);
+
+/*
+Fonction permettant de déclencher l'affichage "Mobile"
+quand les zones 2 et 3 ont la même largeur
+*/
+function change_size() {
+    var article_2 = document.getElementById("article_2");
+    var article_3 = document.getElementById("article_3");
+    var section_2 = document.getElementById("section_2");
+
+    var width_2 = article_2.offsetWidth; // On récupère la largeur du 2ème article
+    var width_3 = article_3.offsetWidth; // On récupère la largeur du 3ème article
+
+    if (width_2 < width_3) { // Si la largeur du 2ème article < à celle du 3ème article (165px)
+        /****** Affichage Mobile ******/
+        section_2.style.flexDirection = "column";
+        article_3.style.margin = "20px 0 0 0";
+        article_3.style.width = "auto";
+    }
+    else if (width_3 > 345) { // Si la largeur du 3ème article > à (min-width 2ème article desktop + min-width 3ème article desktop + padding + border + margin)
+        /****** Affichage Desktop ******/
+        section_2.style.flexDirection = "row";
+        article_3.style.margin = "0 0 0 16px";
+        article_3.style.width = "165px";
+    }
+}
+
+/* Equivalent de jQuery's $.ready() en Javascript */
+document.addEventListener('DOMContentLoaded', function () {
+    window.onresize = change_size;
+}, false);
+
+window.onresize = change_size;
